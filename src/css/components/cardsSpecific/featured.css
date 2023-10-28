@@ -1,0 +1,50 @@
+.featured__footer {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem 1rem 2rem;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.featured__tag {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  color: var(--color-white);
+  position: absolute;
+  left: -0.5rem;
+  top: 0.8rem;
+  font-weight: 600;
+}
+
+.featured__ribbon-tip {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+}
+
+.featured__hot {
+  background-color: red;
+}
+
+.featured__hot-tip {
+  border-top: 5px solid #b35409;
+}
+
+.featured__exclusive {
+  background-color: var(--color-off-black);
+}
+
+.featured__exclusive-tip {
+  border-top: 5px solid #5a5a5a;
+}
+
+.featured__new {
+  background-color: #f60;
+}
+
+.featured__new-tip {
+  border-top: 5px solid #b35409;
+}

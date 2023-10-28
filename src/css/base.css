@@ -3,9 +3,11 @@
   --color-white: #fff;
   --color-black: #000;
   --color-off-white: #f4f7fc;
+  --color-off-black: #2d2d2d;
   --color-secondary-btn: #40b840;
 
   --default-font-color: #2d2d2d;
+  --default-font-color-light: #2d2d2d9c;
   --default-font-size: 1.4rem;
 }
 
