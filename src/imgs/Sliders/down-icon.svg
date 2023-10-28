@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>down-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Mobile" transform="translate(-323.000000, -246.000000)" fill-rule="nonzero">
+            <g id="icon_chevroncircle" transform="translate(323.000000, 246.000000)">
+                <g id="down-icon" transform="translate(9.000000, 9.000000) rotate(-90.000000) translate(-9.000000, -9.000000) ">
+                    <circle id="Oval" fill="#FF6600" cx="8.87625004" cy="8.87625004" r="8.87625004"></circle>
+                    <polyline id="Fill-34-Copy-5" fill="#FFFFFF" transform="translate(9.084381, 9.347502) scale(-1, 1) rotate(90.000000) translate(-9.084381, -9.347502) " points="7.39468551 13.8484863 6.81848147 13.1928366 10.1978734 9.34750239 6.81848147 5.50216817 7.39468551 4.84651851 11.3502814 9.34750239 7.39468551 13.8484863"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

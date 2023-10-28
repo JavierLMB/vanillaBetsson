@@ -1,0 +1,42 @@
+:root {
+  --color-primary: #ff6600;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-off-white: #f4f7fc;
+  --color-secondary-btn: #40b840;
+
+  --default-font-color: #2d2d2d;
+  --default-font-size: 1.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-off-white);
+  color: var(--default-font-color);
+  font-size: var(--default-font-size);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}

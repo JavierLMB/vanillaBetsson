@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  background-color: var(--color-primary);
+  padding: 1.5rem 0rem;
+}
+
+.header__burger {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  left: 1.6rem;
+  top: 1.2rem;
+  height: 3.2rem;
+}
+
+.header__betsson {
+  display: flex;
+  align-self: center;
+  height: 2.7rem;
+}
+
+.header__quick-links {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.header__quick-links a {
+  color: var(--color-white);
+  border-radius: 0.4rem;
+  padding: 0.6rem 5.7rem;
+}
+
+.header__enter-btn {
+  background-color: var(--color-primary);
+  border: 0.1rem var(--color-white) solid;
+}
+.header__register-btn {
+  background-color: var(--color-secondary-btn);
+}
