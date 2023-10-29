@@ -19,14 +19,19 @@
   color: var(--default-font-color-light);
 }
 
-.featured__imgs:hover .featured__overlay {
-  opacity: 1;
-  margin: 0rem auto;
-  transition: opacity 1s ease, margin 0.5s ease;
+.featured__continer {
+  position: relative;
 }
 
 .featured__imgs {
   position: relative;
+  overflow: hidden;
+}
+
+.featured__imgs:hover .featured__overlay {
+  opacity: 1;
+  margin: 0rem auto;
+  transition: opacity 1s ease, margin 0.5s ease;
 }
 
 .featured__overlay {
@@ -38,11 +43,11 @@
   background-color: #0c0000d8;
   border: 2px solid var(--color-white);
   border-top: none;
-  margin: -5rem auto;
+  margin: -15rem auto;
   opacity: 0;
   width: 90%;
   height: 90%;
-  transition: opacity 0.5s ease, margin 2s ease;
+  transition: opacity 1s ease, margin 1s ease;
 }
 
 .featured__overlay button {
@@ -61,6 +66,7 @@
   left: -0.5rem;
   top: 0.8rem;
   font-weight: 600;
+  z-index: 1;
 }
 
 .featured__ribbon-tip {
@@ -70,6 +76,7 @@
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
+  z-index: 1;
 }
 
 .featured__hot {

@@ -1,6 +1,7 @@
 .cookie__container {
   margin: 0 auto;
   max-width: 1170px;
+  display: none;
 }
 .cookie__main-content {
   display: flex;
@@ -8,7 +9,7 @@
   align-items: start;
   background-color: var(--color-off-black);
   gap: 1rem;
-  z-index: 200;
+  z-index: 999;
   position: fixed;
   bottom: 0;
   right: 0;

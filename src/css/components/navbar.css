@@ -4,7 +4,7 @@
   justify-content: center;
   position: fixed;
   background-color: #2e3541;
-  z-index: 150;
+  z-index: 2;
   left: 0;
   bottom: -1px;
   height: 5.6rem;

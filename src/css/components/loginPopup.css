@@ -1,0 +1,126 @@
+.login__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  max-width: 50rem;
+  background-color: var(--color-white);
+  z-index: 4;
+  padding-top: 2rem;
+}
+
+.login__underlay {
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000a4;
+}
+
+.login__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__close {
+  margin-right: 5rem;
+  width: 2rem;
+}
+
+.login__title {
+  padding: 2rem 0 2rem 2rem;
+  border-left: 4px solid #ff6600;
+}
+
+.login__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+}
+
+.login__container label {
+  color: var(--color-font-footer);
+  font-size: 1.6rem;
+  font-weight: 300;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.login__container input {
+  outline: none;
+  position: relative;
+  height: 3rem;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0rem 3rem;
+  border-bottom: 1px solid var(--color-off-black);
+}
+
+.login__profile-icon {
+  display: inline-block;
+  width: 1.6rem;
+  opacity: 0.35;
+}
+
+.login__button {
+  background: var(--color-secondary-btn);
+  color: var(--color-white);
+  border-radius: 2px;
+  padding: 1rem 6rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.login__support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--default-font-color-light);
+  gap: 1rem;
+  border-bottom: 2px solid var(--color-off-white);
+}
+
+.login__support span {
+  margin-top: -1rem;
+  padding-bottom: 5rem;
+  font-weight: 600;
+  color: var(--default-font-color);
+}
+
+.login__footer-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .login__container {
+    max-height: 56rem;
+    border-radius: 0.5rem;
+  }
+
+  .login__form {
+    padding: 4rem 2rem 2.5rem 2rem;
+  }
+
+  .login__support span {
+    padding-bottom: 1rem;
+  }
+  .login__footer-logos {
+    margin-top: 1rem;
+  }
+}
