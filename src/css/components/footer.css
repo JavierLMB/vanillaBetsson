@@ -1,4 +1,6 @@
 .section__footer {
+  max-width: 1170px;
+  margin: 0 auto;
   background-color: var(--color-white);
 }
 
@@ -27,6 +29,10 @@
 .footer__inner-link {
   color: var(--color-primary);
   display: inline-block;
+}
+
+.footer__links-s1.footer__link-hidden {
+  display: none;
 }
 
 .footer__links-s1 {
@@ -72,7 +78,7 @@
 
 .footer__payments-logo,
 .footer__rg-icon {
-  max-height: 3em;
+  max-height: 4rem;
 }
 
 .footer__licence {
@@ -81,6 +87,10 @@
   gap: 1.2rem;
   padding: 0 2rem;
   font-size: 1rem;
+}
+
+.footer__licence p {
+  color: var(--color-black);
 }
 
 .footer__licence a {
@@ -94,4 +104,32 @@
 .footer__partner-logo {
   padding-top: 0.8rem;
   padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__links-s1.footer__link-hidden {
+    display: block;
+  }
+
+  .footer__content {
+    background-color: var(--color-white);
+  }
+
+  .footer__payments-logo,
+  .footer__rg-icon {
+    max-height: 7rem;
+  }
+
+  .footer__licence {
+    margin-top: 5rem;
+    padding: 0rem;
+  }
+
+  .footer__partner-logo {
+    padding-top: 0.8rem;
+    padding-bottom: 2rem;
+    width: 40rem;
+    margin-left: auto;
+    margin-top: -7rem;
+  }
 }

@@ -12,3 +12,92 @@
   font-size: 1.2rem;
   padding: 1.5rem 2rem;
 }
+
+.promotions__footer-btn {
+  display: none;
+}
+
+.promotions__register-bar {
+  display: none;
+}
+
+.promotions__title {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .section__promotions > .cards__header {
+    display: none;
+  }
+
+  .promotions__register-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+  }
+
+  .promotions__step-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .promotions__step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .promotions__step-content {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--color-black);
+  }
+
+  .promotions__title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    color: var(--color-black);
+  }
+
+  .promotions__icon {
+    position: absolute;
+    left: 1rem;
+    top: -2.5rem;
+    height: 3.6rem;
+    width: 3.6rem;
+    padding: 0.8rem;
+    background-color: var(--color-primary);
+  }
+
+  .promotions__footer {
+    display: flex;
+    gap: 5rem;
+    font-size: 1.2rem;
+    padding: 2rem 2rem;
+  }
+
+  .promotions__footer div {
+    flex: 1;
+  }
+
+  .promotions__footer-btn {
+    display: block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0.2rem;
+    padding: 1rem 1rem;
+    font-weight: 400;
+  }
+}

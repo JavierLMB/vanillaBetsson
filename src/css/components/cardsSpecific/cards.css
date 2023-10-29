@@ -39,4 +39,24 @@
 
 .cards__main-img {
   width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cards__main-img {
+    width: 100%;
+    height: 17rem;
+  }
+
+  .cards__header p {
+    font-size: 2rem;
+  }
+
+  .cards__header a {
+    font-size: 1.6rem;
+  }
+
+  .cards__card:first-child {
+    margin-left: 0rem;
+  }
 }

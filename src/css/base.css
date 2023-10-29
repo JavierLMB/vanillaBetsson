@@ -38,7 +38,6 @@ body {
   color: var(--default-font-color);
   font-size: var(--default-font-size);
   overflow-x: hidden;
-  overflow-y: overlay;
   margin: 0;
   padding: 0;
 }
@@ -60,4 +59,9 @@ li {
 ::-webkit-scrollbar-thumb {
   height: 20rem;
   background: linear-gradient(#ff6600, #d85803);
+}
+
+.main__content {
+  max-width: 1170px;
+  margin: 0 auto;
 }

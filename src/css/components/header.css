@@ -1,12 +1,18 @@
 .header {
+  background-color: var(--color-primary);
+  width: 100vw;
+}
+
+.header__main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
   background-color: var(--color-primary);
-  padding: 1.5rem 0rem;
-  width: 100vw;
+  padding-block: 1.5rem;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .header__nav-container {
@@ -58,12 +64,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .header {
+  .header__main-content {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-    padding: 1rem 3.2rem;
+    justify-content: space-between;
+    padding-block: 2rem;
   }
 
   .header__burger {
@@ -71,25 +75,25 @@
   }
 
   .header__betsson {
-    height: 1.6rem;
+    height: 2.2rem;
   }
 
   .header__nav {
     display: flex;
-    gap: 2.4rem;
+    gap: 3.5rem;
   }
 
   .header__nav-container {
     display: flex;
     align-items: end;
-    gap: 2.4rem;
+    gap: 3.5rem;
   }
 
   .header__nav-link {
     display: block;
     color: rgba(255, 255, 255, 0.870588);
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
@@ -98,11 +102,11 @@
     background: rgba(0, 0, 0, 0.121569);
     border-radius: 100px;
     padding: 0.4rem;
-    width: 80%;
+    width: 3rem;
   }
 
   .header__btn {
-    font-size: 1rem;
+    font-size: 1.6rem;
     border-radius: 2rem;
   }
 
@@ -113,10 +117,12 @@
   .header__quick-links > .header__enter-btn {
     background-color: var(--color-off-black);
     border: none;
-    padding-inline: 1.6rem;
+    padding-inline: 2.4rem;
+    padding-block: 0.8rem;
   }
 
   .header__quick-links > .header__register-btn {
-    padding-inline: 1.9rem;
+    padding-block: 0.8rem;
+    padding-inline: 3rem;
   }
 }
