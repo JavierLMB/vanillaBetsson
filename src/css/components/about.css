@@ -1,5 +1,6 @@
 .about__section {
   padding: 3.5rem 2rem 2.5rem 2rem;
+  border-bottom: 1px solid #dcdcdc;
 }
 .about__title {
   display: block;

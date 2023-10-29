@@ -12,33 +12,100 @@
 
 <body>
   <header class="header">
+    <nav class="header__nav">
+      <div>
+        <button class="header__burger" type="button">
+          <img src="/src/imgs/headerSVG/ico_burger-menu.svg" />
+        </button>
 
-    <div>
-      <button class="header__burger" type="button">
-        <img src="/src/imgs/headerSVG/ico_burger-menu.svg" />
-      </button>
+        <a class="header__betsson" href="#">
+          <img src="/src/imgs/headerSVG/logo_main-mobile.svg" alt="Betsson Logo" />
+        </a>
+      </div>
 
-      <a class="header__betsson" href="#">
-        <img src="/src/imgs/headerSVG/logo_main-mobile.svg" alt="Betsson Logo" />
-      </a>
-    </div>
+
+      <ul class="header__nav-container">
+
+        <li>
+          <a class="header__nav-link" href="#">Casino</a>
+        </li>
+
+        <li>
+          <a class="header__nav-link" href="#">Casino en vivo</a>
+        </li>
+
+        <li>
+          <a class="header__nav-link" href="#">Apuestas</a>
+        </li>
+
+        <li>
+          <a class="header__nav-link" href="#">Promociones</a>
+        </li>
+
+        <li>
+          <a class="header__nav-link" href="#">Blog</a>
+        </li>
+
+      </ul>
+    </nav>
 
     <div class="header__quick-links">
-      <a class="header__enter-btn" href="#">
+      <li header__support-container>
+        <a href="#">
+          <img class="header__support-icon" src="/src/imgs/headerSVG/ico_help.png" alt="supprt" />
+        </a>
+      </li>
+
+      <a class="header__btn header__enter-btn" href="#">
         Entrar
       </a>
 
-      <a class="header__register-btn" href="#">Regístrate</a>
+      <a class="header__btn  header__register-btn" href="#">Regístrate</a>
     </div>
   </header>
+
+  <nav class="section__nav">
+    <ul>
+
+      <li>
+        <a href="#">
+          <img src="/src/imgs/navbar/ico_dice1.svg" alt="Dice" />
+          <span>Casino</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/src/imgs/navbar/ico_roulette2.svg" alt="Roulette" />
+          <span>Ruletas</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/src/imgs/navbar/ico_football3.svg" alt="Apuestas" />
+          <span>Apuestas</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/src/imgs/navbar/ico_promotions4.svg" alt="Promo" />
+          <span>Promo</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
 
   <section class="slider__section" aria-label="Promociones">
     <div class="slider__carousel">
 
       <div class="slider__slide">
-        <img class="slider__img" src="/src/imgs/Sliders/Slider1.jpg" />
-        <div class="slider__content">
-          <p class="slider__promo-title">¡Hex!</p>
+        <div class="slider__img slider__img-1"></div>
+
+        <div class=" slider__content">
+          <span class="slider__promo-title">¡Hex!</span>
           <p class="slider__promo-name">¡Vive el mes más terrorifico del año con Betsson!</p>
           <button class="slider__next"><img src="/src/imgs/Sliders/down-icon.svg" />
           </button>
@@ -46,9 +113,10 @@
       </div>
 
       <div class="slider__slide">
-        <img class="slider__img" src="/src/imgs/Sliders/Slider2.jpg" />
+        <div class="slider__img slider__img-2"></div>
+
         <div class="slider__content">
-          <p class="slider__promo-title">¿Truco o trato?</p>
+          <span class="slider__promo-title">¿Truco o trato?</span>
           <p class="slider__promo-name">Prepárate para Halloween con Horror Hotel</p>
           <button class="slider__next"><img src="/src/imgs/Sliders/down-icon.svg" />
           </button>
@@ -56,9 +124,10 @@
       </div>
 
       <div class="slider__slide">
-        <img class="slider__img" src="/src/imgs/Sliders/Slider3.jpg" />
+        <div class="slider__img slider__img-3"></div>
+
         <div class="slider__content">
-          <p class="slider__promo-title">¡NBA!</p>
+          <span class="slider__promo-title">¡NBA!</span>
           <p class="slider__promo-name">La lucha por el anillo se juega en Betsson</p>
           <button class="slider__next"><img src="/src/imgs/Sliders/down-icon.svg" />
           </button>
@@ -244,7 +313,7 @@
   </section>
 
   <section class="about__section">
-    <p class="about__title">Bienvenido a la Casa de Apuestas y Casino Online de Betsson.es</p>
+    <span class="about__title">Bienvenido a la Casa de Apuestas y Casino Online de Betsson.es</span>
     <p class="about__content">Betsson es <b>el gigante sueco de las casas de apuestas y casino online</b> más grande del
       mundo. Con más de 50 años de experiencia, Betsson es la casa de apuestas deportivas donde sus jugadores son los
       protagonistas y reciben toda la atención. Además, pueden conseguir grandes premios al instante.
@@ -257,6 +326,88 @@
     </p>
     <button class="about__more">Mas Informacion &#8681;</button>
   </section>
+
+  <footer class="section__footer">
+    <div class="footer__links">
+
+      <div class="footer__links-s1">
+        <span class="footer__title">Betsson</span>
+        <a class="footer__link" href="#">¿Quiénes somos?</a>
+        <a class="footer__link" href="#">Condiciones generales</a>
+        <a class="footer__link" href="#">Juego más seguro</a>
+        <a class="footer__link" href="#">Política de cookies</a>
+        <a class="footer__link" href="#">Política de privacidad</a>
+      </div>
+
+      <div class="footer__links-s2">
+        <span class="footer__title">Afiliados</span>
+        <p class="footer__content">Haz click <a class="footer__inner-link" href="#">aquí</a> para unirte a nuestra
+          altamente rentable red de
+          afiliados de Betsson Group.
+        </p>
+        <a class="footer__cookies-btn" href="#" title="cookies settings">Ajustes de Cookies</a>
+      </div>
+
+    </div>
+
+    <div class="footer__logos">
+      <div class="footer__payments">
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/Visa_logo1.png" alt="Visa">
+        </a>
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/PayPal_logo2.png" alt="PayPal">
+        </a>
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/Mastercard_logo3.png"
+            alt="Mastercard">
+        </a>
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/Skrill_logo4.png" alt="Skrill">
+        </a>
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/Paysafe_logo5.png" alt="Paysafe">
+        </a>
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/Bancaria_logo6.png" alt="Bancaria">
+        </a>
+        <a href="#" class="footer__payments-link">
+          <img class="footer__payments-logo" src="/src/imgs/footer/footerPayments/Bizum_logo7.png" alt="Bizum">
+        </a>
+      </div>
+      <div class="footer__rg-icons">
+        <a href="#">
+          <img class="footer__rg-icon" src="/src/imgs/footer/footerRG/JuegoSeguro_logo1.png" alt="JuegoSeguro" />
+        </a>
+        <a href="#">
+          <img class="footer__rg-icon" src="/src/imgs/footer/footerRG/JugarBien_Logo2.png" alt="JugarBien" />
+        </a>
+        <a href="#">
+          <img class="footer__rg-icon" src="/src/imgs/footer/footerRG/logo-autoprohibition3.png"
+            alt="autoprohibition" />
+        </a>
+        <a href="#">
+          <img class="footer__rg-icon" src="/src/imgs/footer/footerRG/Autocontrol_logo4.png" alt="Autocontrol" />
+        </a>
+        <a href="#">
+          <img class="footer__rg-icon" src="/src/imgs/footer/footerRG/18plus_logo5.png" alt="18plus" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__licence">
+      <p><a>Juego autorizado</a></p>
+      <p>Betsson opera bajo Premiere Megaplex PLC que cuenta con las licencias número 255/GA/1051, 265/GO/1051,
+        262/BLI/1051, 264/RLT/1051, 369/MAZ/1051 Apuestas Deportivas: 260/ADC/1051 Otras apuestas:
+        421/AOC/1051 otorgadas por el Gobierno de España y que están reguladas por la Dirección General de la
+        Ordenación del Juego en España. Premiere Megaplex PLC es una sociedad registrada y con domicilio social
+        en Betsson Experience centre, Ta'Xbiex Seafront, Ta'Xbiex XBX 1027, Malta.</p>
+      <p>Para contactar al departamento de juego responsable <strong class="footer__number">900 808 069</strong></p>
+      <p><a>www.jugarbien.es</a></p>
+      <p><a>Descarga aqui el contenido de nuestra pagina de juego responsable</a></p>
+      <img class="footer__partner-logo" src="/src/imgs/footer/footer-partner-boca.png" />
+    </div>
+  </footer>
 
   <script type="module" src="src/js/main.js" defer></script>
 </body>

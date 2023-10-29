@@ -8,6 +8,7 @@
 
   --default-font-color: #2d2d2d;
   --default-font-color-light: #2d2d2d9c;
+  --color-font-footer: #9b9b9b;
   --default-font-size: 1.4rem;
 }
 
@@ -37,8 +38,26 @@ body {
   color: var(--default-font-color);
   font-size: var(--default-font-size);
   overflow-x: hidden;
+  overflow-y: overlay;
+  margin: 0;
+  padding: 0;
 }
 
 button {
   cursor: pointer;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 20rem;
+  background: linear-gradient(#ff6600, #d85803);
 }
