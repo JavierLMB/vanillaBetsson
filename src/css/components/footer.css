@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   padding: 3.5rem 2rem 2.5rem 2rem;
   font-size: 1.2rem;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid var(--border-color-grey);
 }
 
 .footer__title {
@@ -21,7 +21,7 @@
 
 .footer__link,
 .footer__content {
-  color: var(--color-font-footer);
+  color: var(--color-font-grey);
   display: block;
   padding-bottom: 1rem;
 }
@@ -59,7 +59,7 @@
 }
 
 .footer__logos {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid var(--border-color-grey);
   padding: 2.6rem 0rem;
   margin-bottom: 2.5rem;
 }

@@ -90,6 +90,11 @@
   transition: transform 0.2s ease;
 }
 
+.slider__arrow:active {
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
 @media only screen and (min-width: 1000px) {
   .section__slider {
     min-height: 30rem;
@@ -144,6 +149,17 @@
     color: var(--color-white);
     border-radius: 0.2rem;
     padding: 1.2rem 3rem;
+    transition: transform 0.2s ease;
+  }
+
+  .slider__content-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+
+  .slider__content-btn:active {
+    transform: scale(1);
+    transition: transform 0.2s ease;
   }
 
   .slider__arrows {

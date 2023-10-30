@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: #2e3541;
+  background-color: var(--nav-background-color);
   z-index: 2;
   left: 0;
   bottom: -1px;

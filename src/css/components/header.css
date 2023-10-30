@@ -52,7 +52,14 @@
 .header__enter-btn {
   background-color: var(--color-primary);
   border: 0.1rem var(--color-white) solid;
+  transition: transform 0.2s ease;
 }
+
+.header__enter-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
 .header__register-btn {
   background-color: var(--color-secondary-btn);
 }
@@ -91,7 +98,7 @@
 
   .header__nav-link {
     display: block;
-    color: rgba(255, 255, 255, 0.870588);
+    color: hsla(0, 0%, 100%, 0.871);
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;

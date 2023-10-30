@@ -2,7 +2,7 @@
   padding: 3.5rem 2rem 2.5rem 2rem;
 }
 .about__main-content {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid var(--border-color-grey);
   padding-bottom: 1rem;
 }
 

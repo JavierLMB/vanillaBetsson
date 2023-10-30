@@ -8,8 +8,19 @@
 
   --default-font-color: #2d2d2d;
   --default-font-color-light: #2d2d2d9c;
-  --color-font-footer: #9b9b9b;
+  --color-font-grey: #9b9b9b;
   --default-font-size: 1.4rem;
+
+  --tag-color-hot: #ff0000;
+  --tag-color-exclusive: #2d2d2d;
+  --tag-color-new: #f60;
+
+  --tip-color-hot: #b30909;
+  --tip-color-exclusive: #5a5a5a;
+  --tip-color-new: #b35409;
+
+  --border-color-grey: #dcdcdc;
+  --nav-background-color: #2e3541;
 }
 
 * {

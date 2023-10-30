@@ -16,7 +16,7 @@
   right: 0;
   color: var(--color-white);
   padding: 3rem;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-white);
   border-radius: 3px;
 }
 
@@ -38,14 +38,25 @@
   font-weight: 400;
   color: var(--color-white);
   border-radius: 2px;
-  background: #ff6600;
+  background: var(--color-primary);
   padding: 0.6rem 5.7rem;
+  transition: transform 0.2s ease;
+}
+
+.cookie__button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.cookie__button:active {
+  transform: scale(1);
+  transition: transform 0.2s ease;
 }
 
 @media only screen and (min-width: 1000px) {
   .cookie__main-content {
     width: 45rem;
-    border: 5px solid #fff;
+    border: 5px solid var(--color-white);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     right: 2rem;
     bottom: 2rem;
