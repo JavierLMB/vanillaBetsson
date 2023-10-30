@@ -24,4 +24,4 @@ Live link - https://betssonjs.netlify.app/
 
 This command will start a development server and open the project in your default web browser.
 
-Additionally, if you would like to further inspect the code, open the vanillaBetsson folder in an IDE.
+Additionally, if you would like to further inspect the code, you can find the vanillaBetsson folder from your desktop and open it in an IDE.
