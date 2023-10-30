@@ -1,3 +1,11 @@
-import { initializeCarousel } from "./components/sliders.js";
+import { carousel } from "./components/sliders.js";
 
-initializeCarousel();
+carousel();
+
+import { loginPopup } from "./components/loginPopup.js";
+
+loginPopup();
+
+import { cookies } from "./components/cookies.js";
+
+cookies();

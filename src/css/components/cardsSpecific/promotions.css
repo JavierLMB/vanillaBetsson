@@ -21,8 +21,37 @@
   display: none;
 }
 
+.promotions__cards {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  width: 100%;
+  padding: 0rem 1rem;
+  margin-block: 3rem;
+}
+
 .promotions__title {
   display: none;
+}
+
+.promotions__imgs {
+  position: relative;
+}
+
+.promotions__card {
+  min-width: 24.5rem;
+  background-color: var(--color-white);
+  color: var(--default-font-color-light);
+  margin-block: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.promotions__card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.promotions__card:first-child {
+  margin-left: 1rem;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -33,7 +62,8 @@
   .promotions__register-bar {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 0rem;
+    padding: 3rem 0rem;
+    margin-bottom: -4rem;
   }
 
   .promotions__step-container {
@@ -69,6 +99,10 @@
     font-weight: 700;
     padding: 1rem 2rem;
     color: var(--color-black);
+  }
+
+  .promotions__card:first-child {
+    margin-left: 0rem;
   }
 
   .promotions__icon {

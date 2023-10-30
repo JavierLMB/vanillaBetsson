@@ -1,17 +1,4 @@
-.login__container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  max-width: 50rem;
-  background-color: var(--color-white);
-  z-index: 4;
-  padding-top: 2rem;
-}
-
-.login__underlay {
+.login__overlay {
   z-index: 3;
   position: fixed;
   top: 50%;
@@ -20,6 +7,24 @@
   width: 100vw;
   height: 100vh;
   background-color: #000000a4;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.login__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  height: 100%;
+  width: 100%;
+  max-width: 50rem;
+  background-color: var(--color-white);
+  z-index: 4;
+  padding-top: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .login__header {

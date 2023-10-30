@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <div class="login__underlay">
 
+  <div class="login__overlay">
     <div class="login__container">
       <div class="login__header">
         <img class="login__title" src="/src/imgs/loginPopup/betsson-logo.svg" srcset="Betsson Logo" />
@@ -25,14 +25,14 @@
             <img class="login__profile-icon" src="/src/imgs/loginPopup/icon_profile.svg" alt="Profile Icon" />
             <span>Usuario</span>
           </label>
-          <input type="text" id="username" name="username" autofocus>
+          <input type="text" id="username" name="username" autofocus required>
         </div>
         <div>
           <label for="username">
             <img class="login__profile-icon" src="/src/imgs/loginPopup/locked.svg" alt="Lock Icon" />
             <span>Contraseña</span>
           </label>
-          <input type="password" id="password" name="password" autofocus>
+          <input type="password" id="password" name="password" autofocus required>
         </div>
         <button class="login__button">Entrar</button>
       </form>
@@ -144,7 +144,7 @@
       <div class="slider__slide">
         <div class="slider__img slider__img-1"></div>
 
-        <div class=" slider__content">
+        <div class="slider__content">
           <span class="slider__promo-title">¡Hex!</span>
           <p class="slider__promo-name">¡Vive el mes más terrorifico del año con Betsson!</p>
           <div class="slider__content-btn-container">
@@ -223,13 +223,13 @@
         </div>
       </div>
 
-      <div class="cards__cards">
+      <div class="promotions__cards">
 
-        <div class="cards__card">
+        <div class="promotions__card">
           <div class="promotions__title">
             Casino
           </div>
-          <div class="cards__imgs">
+          <div class="promotions__imgs">
             <img class="cards__main-img" src="/src/imgs/PromotionCards/Card1.jpg" alt="slots" />
             <div>
               <img class="promotions__icon" src="/src/imgs/PromotionCards/icon-casino1.svg" alt="slots" />
@@ -244,11 +244,11 @@
           </div>
         </div>
 
-        <div class="cards__card">
+        <div class="promotions__card">
           <div class="promotions__title">
             Apuestas
           </div>
-          <div class="cards__imgs">
+          <div class="promotions__imgs">
             <img class="cards__main-img" src="/src/imgs/PromotionCards/Card2.jpg" alt="slots" />
             <div>
               <img class="promotions__icon" src="/src/imgs/PromotionCards/icon_sports2.svg" alt="sports" />
@@ -262,11 +262,11 @@
           </div>
         </div>
 
-        <div class="cards__card">
+        <div class="promotions__card">
           <div class="promotions__title">
             Ruletas en Vivo
           </div>
-          <div class="cards__imgs">
+          <div class="promotions__imgs">
             <img class="cards__main-img" src="/src/imgs/PromotionCards/Card3.jpg" alt="slots" />
             <div>
               <img class="promotions__icon" src="/src/imgs/PromotionCards/icon_livecasino3.svg" alt="live casino" />

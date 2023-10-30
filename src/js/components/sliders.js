@@ -1,4 +1,4 @@
-export function initializeCarousel() {
+export function carousel() {
   const carousel = $(".slider__carousel");
   const slide = $(".slider__slide");
   const slideWidth = slide.width();
@@ -20,11 +20,18 @@ export function initializeCarousel() {
     }
   }
 
-  carousel.on("transitionend", function () {
+  carousel.on("transitionend", function (e) {
+    if (e.originalEvent.propertyName !== "transform") return;
+
     showSlide();
     carousel.css({ transition: "none" });
+
     carousel.css({ transform: "translate(0)" });
-    setTimeout(() => carousel.css({ transition: "all 0.2s ease-in" }));
+    setTimeout(() =>
+      carousel.css({
+        transition: "transform 0.7s cubic-bezier(0.1, 0.25, 0.1, 1)",
+      })
+    );
   });
 
   function nextSlide() {
@@ -37,11 +44,11 @@ export function initializeCarousel() {
     carousel.css({ transform: `translateX(${slideWidth}px)` });
   }
 
-  $(".slider__next").click(function () {
+  $(".slider__next").click(function (e) {
     nextSlide();
   });
 
-  $(".slider__prev").click(function () {
+  $(".slider__prev").click(function (e) {
     prevSlide();
   });
 
@@ -57,7 +64,6 @@ export function initializeCarousel() {
   carousel.on("mousemove touchmove", function (event) {
     if (isDragging) {
       const dragX = event.pageX || event.originalEvent.touches[0].pageX;
-      console.log(dragX);
       dragOffset = dragX - dragStartX;
       const translateValue = dragOffset + "px";
       carousel.css({ transform: `translateX(${translateValue})` });
@@ -69,13 +75,23 @@ export function initializeCarousel() {
       prevSlide();
     } else if (dragOffset < -50) {
       nextSlide();
-    } else {
-      carousel.css({ transform: "translate(0)" }); //fix it
+    } else if (dragOffset < 50 && dragOffset > -50) {
+      carousel.css({ transform: "translateX(0)" });
+
+      setTimeout(() => {
+        carousel.css({
+          transition: "transform 0.7s cubic-bezier(0.1, 0.25, 0.1, 1)",
+        });
+      });
     }
+
+    if (dragOffset > 50 || dragOffset < -50 || dragOffset === 0)
+      carousel.css({
+        transition: "transform 0.7s cubic-bezier(0.1, 0.25, 0.1, 1)",
+      });
 
     isDragging = false;
 
-    carousel.css({ transition: "all 0.2s ease-in" });
     intervalId = setInterval(nextSlide, 5000);
   });
 
