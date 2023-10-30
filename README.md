@@ -6,13 +6,13 @@ Live link - https://betssonjs.netlify.app/
 
 ## Getting Started
 
-1. **Clone the Repository**:
+1. **Navigate to your Desktop**:
+
+`cd Desktop`
+
+2. **Clone the Repository**:
 
 `git clone https://github.com/JavierLMB/vanillaBetsson.git`
-
-2. **Navigate to the cloned directory**:
-
-`cd vanillaBetsson`
 
 3. **Install the project dependencies**:
 
@@ -23,3 +23,5 @@ Live link - https://betssonjs.netlify.app/
 `npm run dev`
 
 This command will start a development server and open the project in your default web browser.
+
+Additionally, if you would like to further inspect the code, open the vanillaBetsson folder in an IDE.
