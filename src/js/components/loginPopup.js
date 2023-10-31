@@ -4,7 +4,7 @@ export function loginPopup() {
   const closeOverlay = $(".login__overlay");
   const loginContainer = $(".login__container");
 
-  function closeModal() {
+  const closeModal = () => {
     closeOverlay.css({ opacity: 0 });
     loginContainer.css({ opacity: 0 });
     loginContainer.css({ transform: `translate(-50%, -200%)` });
@@ -12,16 +12,16 @@ export function loginPopup() {
     setTimeout(() => {
       closeOverlay.css({ display: "none" });
     }, 300);
-  }
+  };
 
-  function openModal() {
+  const openModal = () => {
     closeOverlay.css({ display: "block" });
     setTimeout(() => {
       closeOverlay.css({ opacity: 1 });
       loginContainer.css({ opacity: 1 });
       loginContainer.css({ transform: `translate(-50%, -50%)` });
     }, 0);
-  }
+  };
 
   enter.on("click", openModal);
 

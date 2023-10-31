@@ -2,12 +2,12 @@ export function cookies() {
   const cookieContainer = $(".cookie__container");
   const cookieButton = $(".cookie__button");
 
-  $(document).ready(function () {
+  $(document).ready(() => {
     if (!getCookie("acceptedCookies"))
       cookieContainer.css({ display: "block" });
   });
 
-  cookieButton.on("click", function () {
+  cookieButton.on("click", () => {
     if (!getCookie("acceptedCookies"))
       setCookie("acceptedCookies", "true", 365);
 
