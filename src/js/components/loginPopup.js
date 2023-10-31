@@ -1,41 +1,33 @@
 export function loginPopup() {
-  const Enter = $(".header__enter-btn");
-  const CloseBtn = $(".login__close");
-  const CloseOverlay = $(".login__overlay");
-  const LoginContainer = $(".login__container");
+  const enter = $(".header__enter-btn");
+  const closeButton = $(".login__close");
+  const closeOverlay = $(".login__overlay");
+  const loginContainer = $(".login__container");
 
   function closeModal() {
-    CloseOverlay.css({ opacity: 0 });
-    LoginContainer.css({ opacity: 0 });
-    LoginContainer.css({ transform: `translate(-50%, -200%)` });
+    closeOverlay.css({ opacity: 0 });
+    loginContainer.css({ opacity: 0 });
+    loginContainer.css({ transform: `translate(-50%, -200%)` });
 
     setTimeout(() => {
-      CloseOverlay.css({ display: "none" });
+      closeOverlay.css({ display: "none" });
     }, 300);
   }
 
   function openModal() {
-    CloseOverlay.css({ display: "block" });
+    closeOverlay.css({ display: "block" });
     setTimeout(() => {
-      CloseOverlay.css({ opacity: 1 });
-      LoginContainer.css({ opacity: 1 });
-      LoginContainer.css({ transform: `translate(-50%, -50%)` });
+      closeOverlay.css({ opacity: 1 });
+      loginContainer.css({ opacity: 1 });
+      loginContainer.css({ transform: `translate(-50%, -50%)` });
     }, 0);
   }
 
-  Enter.click(function () {
-    openModal();
-  });
+  enter.on("click", openModal);
 
-  CloseBtn.click(function () {
-    closeModal();
-  });
+  closeButton.on("click", closeModal);
 
-  CloseOverlay.click(function () {
-    closeModal();
-  });
+  closeOverlay.on("click", closeModal);
 
-  LoginContainer.click(function (e) {
-    e.stopPropagation();
-  });
+  loginContainer.on("click", (e) => e.stopPropagation());
 }

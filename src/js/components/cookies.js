@@ -7,7 +7,7 @@ export function cookies() {
       cookieContainer.css({ display: "block" });
   });
 
-  cookieButton.click(function () {
+  cookieButton.on("click", function () {
     if (!getCookie("acceptedCookies"))
       setCookie("acceptedCookies", "true", 365);
 

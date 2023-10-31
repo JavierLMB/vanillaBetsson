@@ -30,8 +30,8 @@ export function carousel() {
     clearInterval(intervalId);
   }
 
-  btnNext.click(nextSlide);
-  btnPrev.click(previousSlide);
+  btnNext.on("click", nextSlide);
+  btnPrev.on("click", previousSlide);
 
   startCarousel();
 

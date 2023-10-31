@@ -1,7 +1,11 @@
+.footer__content-main {
+  padding-bottom: 6rem;
+  background-color: var(--color-white);
+}
+
 .section__footer {
   max-width: 1170px;
   margin: 0 auto;
-  background-color: var(--color-white);
 }
 
 .footer__links {
@@ -106,12 +110,18 @@
   padding-bottom: 2rem;
 }
 
+@media only screen and (min-width: 700px) {
+  .footer__partner-logo {
+    width: 40rem;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   .footer__links-s1.footer__link-hidden {
     display: block;
   }
 
-  .footer__content {
+  .footer__content-main {
     background-color: var(--color-white);
   }
 
@@ -128,7 +138,6 @@
   .footer__partner-logo {
     padding-top: 0.8rem;
     padding-bottom: 2rem;
-    width: 40rem;
     margin-left: auto;
     margin-top: -7rem;
   }
