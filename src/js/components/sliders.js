@@ -1,7 +1,7 @@
 export function carousel() {
   const slide = $(".slider__slide");
-  const btnNext = $(".slider__next");
-  const btnPrev = $(".slider__prev");
+  const buttonNext = $(".slider__next");
+  const buttonPrev = $(".slider__prev");
   let sectionIndex = 0;
   let intervalId;
 
@@ -30,8 +30,8 @@ export function carousel() {
     clearInterval(intervalId);
   }
 
-  btnNext.on("click", nextSlide);
-  btnPrev.on("click", previousSlide);
+  buttonNext.on("click", nextSlide);
+  buttonPrev.on("click", previousSlide);
 
   startCarousel();
 
